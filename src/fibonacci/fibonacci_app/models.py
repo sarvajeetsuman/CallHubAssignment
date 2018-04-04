@@ -9,7 +9,7 @@ class HistoryData(models.Model):
     """
     This Table maintains a history of query performed
     """
-    input_number = models.IntegerField(unique=True)
+    input_number = models.IntegerField()
     fibonacci_result = models.CharField(max_length=250, null=True,blank=True)
     created_date = models.DateTimeField(auto_now_add = True,blank=True, null=True)
     modified_date = models.DateTimeField(auto_now = True, blank=True, null=True)

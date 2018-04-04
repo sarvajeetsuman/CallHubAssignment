@@ -12,8 +12,9 @@
 
     <form>
       <input type="number" class="txt" name="inputNum" placeholder="Enter a number" [(ngModel)]="inputNumber" id="inputNumber">
+      <p class="life-container" style="background:rgb(145, 6, 6);color:white" *ngIf="flag" >Please Enter a Valid Number</p>
       <p class="life-container" >Fibonnaci Number : {{ fibonacciResult}}</p>
-      <p class="life-container" >Time Taken : {{ timeTaken }} milliseconds</p>
+      <p class="life-container" >Time Taken : {{ timeTaken }} seconds</p>
       <input type="submit" class="btn" value="Submit" (click)="GetFibonacciNumber(inputNumber, fibonacciResult='')">
     </form>
   </div>
