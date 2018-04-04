@@ -1,28 +1,28 @@
-<div class="container color-dark">
+<div class="container">
   <div class="col">
-    <p>Print Nth Fibonacci Number</p>
-  </div>
-  <div class="col">
-    <p>Last 10 Queries History(Total Queries = {{ itemCount }})</p>
-  </div>
-</div>
-<div class="container color-light">
-  <div class="col">
-    <p class="sm">Enter a number N to find Nth Fibonacci Number? (only between 1 to 999)</p>
+    <div class="rowx">
+      <div class="row color-dark"><p>Print Nth Fibonacci Number</p></div>
+      <div class="row rowxy color-light"><p class="sm">Enter a number N to find Nth Fibonacci Number? (only between 1 to 999)</p>
 
-    <form>
-      <input type="number" class="txt" name="inputNum" placeholder="Enter a number" [(ngModel)]="inputNumber" id="inputNumber">
-      <p class="life-container" style="background:rgb(145, 6, 6);color:white" *ngIf="flag" >Please Enter a Valid Number</p>
-      <p class="life-container" >Fibonnaci Number : {{ fibonacciResult}}</p>
-      <p class="life-container" >Time Taken : {{ timeTaken }} seconds</p>
-      <input type="submit" class="btn" value="Submit" (click)="GetFibonacciNumber(inputNumber, fibonacciResult='')">
-    </form>
-  </div>
-  <div class="col">
-    <div *ngFor="let his of result; let i=index">
-      <p class="life-container" *ngIf="i<10">
-          {{ his.input_number }}th Fibonacci number is  {{ his.fibonacci_result }} .
-      </p>
+        <form>
+          <input type="number" class="txt" name="inputNum" placeholder="Enter a number" [(ngModel)]="inputNumber" id="inputNumber">
+          <p class="life-container" style="background:rgb(145, 6, 6);color:white" *ngIf="flag" >Please Enter a Valid Number</p>
+          <p class="life-container" >Fibonnaci Number : {{ fibonacciResult}}</p>
+          <p class="life-container" >Time Taken : {{ timeTaken }} seconds</p>
+          <input type="submit" class="btn" value="Submit" (click)="GetFibonacciNumber(inputNumber, fibonacciResult='')">
+        </form></div>
+    </div>
+    <div class="rowx">
+      <div class="row color-dark"><p>Last 10 Queries History(Total Queries = {{ itemCount }})</p></div>
+      <div class="row rowxy color-light">
+        <div *ngFor="let his of result; let i=index">
+          <p class="life-container" *ngIf="i<10">
+              {{ his.input_number }}th Fibonacci number is  {{ his.fibonacci_result }} .
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+

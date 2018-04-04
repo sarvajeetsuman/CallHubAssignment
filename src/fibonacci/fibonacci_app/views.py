@@ -47,7 +47,7 @@ class FibonacciViewSet(viewsets.ViewSet):
         list query history
         """
         try:
-            history_data = models.HistoryData.objects.all().order_by('-created_date')
+            history_data = models.HistoryData.objects.all().order_by('-modified_date')
         except:
             return Response({"errors":"Could not fetch the data"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         serializer = serializers.FibonacciSerializer(history_data, many=True)

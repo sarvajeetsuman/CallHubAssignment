@@ -39,7 +39,15 @@ input.btn {
 
 img {
     border-radius: 8px;
-    max-width : 300px;
+    max-width : 50%;
     height:auto;
     filter: grayscale(50%);
+}
+
+@media (max-width: 1200px){
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        overflow-wrap: break-word;
+    }
 }

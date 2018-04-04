@@ -1,9 +1,12 @@
-.container {
+.col {
     display: grid;
     grid-template-columns: 50% 50%;
     overflow-wrap: break-word;
 }
-.col {
+.rowxy{
+    min-height: 700px;
+}
+.row{
     padding: .4em 1.3em;
 }
 .color-dark {
@@ -35,4 +38,15 @@ input.btn {
     cursor:pointer;
     max-width: 90%;
     overflow-wrap: break-word;
+}
+
+@media (max-width: 1200px){
+    .col{
+        display: grid;
+        grid-template-columns: 100%;
+        overflow-wrap: break-word;
+    }
+    .rowxy{
+        min-height: 0px;
+    }
 }
