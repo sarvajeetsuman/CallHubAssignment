@@ -1,0 +1,5 @@
+PyMySQL==0.8.0
+django-cors-headers==2.2.0
+djangorestframework==3.6.2
+PyMySQL==0.8.0
+pytz==2018.3

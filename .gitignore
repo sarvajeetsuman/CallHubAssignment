@@ -106,3 +106,6 @@ ENV/
 
 commands.txt
 important-links.txt
+src/fibonacci/mysite/settings.py
+src/fibonacci/lib/
+src/fibonacci/frontend/node_modules/
