@@ -29,6 +29,8 @@ the database. Otherwise it computes & sends back to the frontend.
 
 ## Issues Faced:
  1. Test cases are not working currently.
+## Screenshots 
+
  ![](Screenshots/screenshot-sarvajeetsuman.com-2018-04-05-09-48-42.png)
 
  ![](Screenshots/screenshot-sarvajeetsuman.com-2018-04-05-09-49-55.png)
