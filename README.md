@@ -7,6 +7,8 @@ This application has been created for the following purpose.
 
 1. To get the fibonacci number between 1 to 999 & time taken to perform the query.
 2. To see the history of previous queries
+3. Fibonacci Number computation is happening in both Backend & Frontend,
+   just for demonstration purpose.
 
 ## Frontend - Angular 5.
 ## Backend - django 1.11 & Django Rest framework 1.11
